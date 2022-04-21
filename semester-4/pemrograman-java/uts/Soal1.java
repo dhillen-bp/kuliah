@@ -120,17 +120,17 @@ public class Soal1 {
                 if(harga * jml_item >= 75000) {
                     str_diskon = "25%";
                     diskon = 0.25;
-                    total_diskon = harga * diskon;
+                    total_diskon = (harga * jml_item) * diskon;
                     total_byr = harga * jml_item - total_diskon;
                 } else if(harga * jml_item >= 50000) {
                     str_diskon = "15%";
                     diskon = 0.15;
-                    total_diskon = harga * diskon;
+                    total_diskon = (harga * jml_item) * diskon;
                     total_byr = harga * jml_item - total_diskon;
                 } else if (harga * jml_item >= 25000) {
                     str_diskon = "10%";
                     diskon = 0.10;
-                    total_diskon = harga * diskon;
+                    total_diskon = (harga * jml_item) * diskon;
                     total_byr = harga * jml_item - total_diskon;
                 } else {
                     str_diskon = "0%";
@@ -163,8 +163,6 @@ public class Soal1 {
             // mengecek apakah ingin mengulang
             if( pilihan.equalsIgnoreCase("n") ){
                 isAgain = false;
-            }else if(pilihan.equalsIgnoreCase("y")) {
-                isAgain = true;
             }
             ulangi++;
 
