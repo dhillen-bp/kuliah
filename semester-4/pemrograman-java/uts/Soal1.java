@@ -111,7 +111,7 @@ public class Soal1 {
                         break;
                     case 3:
                         nm_item = "Saos Tiram";
-                        harga = 12000d;
+                        harga = 15000d;
                         break;
                     default:
                         break;
